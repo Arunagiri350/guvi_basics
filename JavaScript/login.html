@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <script>
+       //var user=[{email:'yyy@gmail.com',pass:'yyy' }]
+        function login(form){
+            document.getElementById('email_inst').innerHTML=mail;
+            if(form.email.value=="yyy@gmail.com" && form.pass.value=="arun")
+            {
+                alert("success")
+                window.open('home.html');               
+            }
+            else{
+                alert("Error email or password");
+            }
+            
+    }
+    </script>
+    <head>
+        
+        <title>
+            LOGIN
+        </title>
+    </head>
+    <body>
+        <div>
+            <center>
+                <h1>
+                    LOGIN
+                </h1>
+            </center>
+        </div>
+        <div>
+            <form>
+                Username<input type="text" name="email"/>
+                Password<input type="password" name="pass"/>
+                <input type="button" onclick="login(this.form)" value="Login"/>
+            </form>
+        </div>
+
+    </body>
+</html>
